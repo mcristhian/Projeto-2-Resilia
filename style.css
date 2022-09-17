@@ -12,6 +12,7 @@
 body {
     display: block;
     min-height: 100vh;
+    
 }
 
 
@@ -78,14 +79,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     padding: 2rem;
     background-color: antiquewhite;
 }
 
+
+
+main h2 {
+    font-size: 2.5rem;
+}
+
+main p {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
 .feira {
     width: 100%;
-    height: auto ;  
+    height: 70vmin;
 }
 
 main img {
@@ -94,18 +107,15 @@ main img {
     border-radius: 10%;  
 }
 
-main p {
-    padding-top: 2rem;
-    padding-bottom: 2.5rem;
-}
-
 footer{
     display:flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
-    position: fixed;
-    height: 2rem;
+    
     width: 100%;
+    padding: 1.5rem;
+
+    background-color: rgb(113, 194, 117);
 
 }
