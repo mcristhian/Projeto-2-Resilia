@@ -100,8 +100,10 @@ main p {
 }
 
 .feira {
+    display:contents;
     width: 100%;
     height: 70vmin;
+    align-content: center;
 }
 
 main img {
@@ -124,5 +126,62 @@ footer{
 
 /* ----------Media Querry---------- */
 
-@media (min-width: 970px)
+@media (min-width: 970px){
+    .hdr {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 32rem;
+        padding: 2.5rem;
+        padding-bottom: 1.5rem;    
+    }
 
+    header h1 {
+        font-size: 5em;
+    }
+
+    .img {
+        display:flex;
+        min-height: 15rem;
+        min-width: 15rem;
+        background-image: url(./img/logo1.jpg);
+        background-size: contain;
+        border-radius: 50%;       
+    }
+
+    a.link {
+        font-size: 2.5rem;
+        padding: 1rem;
+    }
+
+    .feira {
+        display:contents;
+        width: 100%;
+        height: 70vmin;
+        align-content: center;
+    }
+
+    main h2 {
+        font-size: 5.5rem;
+    }
+
+    main p {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        font-size: 2.7em;
+        text-align:justify;
+        max-width: 80%;
+    }
+    
+    main img {
+        max-width: 50%;
+        max-height: 50%;
+        border-radius: 10%;
+        margin-bottom: 5rem;  
+    }
+    
+    footer {
+        font-size: 2rem;
+    }
+
+}
