@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: block;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(83, 146, 76);
+  background-image: url(./img/bckg2.jpg);
+  background-size: cover;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hdr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6rem;
+  padding: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  color: rgb(133, 23, 23);
+}
+
+.img {
+  display:flex;
+  min-height: 9rem;
+  min-width: 9rem;
+  background-image: url(./img/logo1.jpg);
+  background-size: contain;
+  border-radius: 50%;
+}
+
+#logo {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: auto auto 2rem;  
+}
+
+a.link {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color:rgb(133, 23, 23);
+  padding: 0.2rem;
+  margin-top: 0.6rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  background-color: antiquewhite;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.local {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 15rem;
+}
+
+.local h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5rem;  
+}
+
+.local p {
+  font-size: 2rem;
+}
+
+form {
+  background-color: white;
+  height: 40rem;
+  width: 70rem;
+  border-radius: 8px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;  
+}
+
+form legend {
+  font-family: 'EB Garamond', serif;
+  font-size:2.5rem;
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Acme', sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: black;
+}
+
+.input-wrapper input {
+  border-radius: 0.8rem;
+  width: 60rem;
+  padding: 0 5px;
+
+  font-family: 'Acme', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper textarea {
+  border-radius: 0.8rem;
+  height: 9rem;
+  width: 60rem;
+  padding: 0 5px;
+
+  font-size: 16px;
+  line-height: 26px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+form .button {
+  border-radius: 8px;
+  padding: 0 100px;
+
+  font-family: 'Acme', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color:  rgb(113, 194, 117);
+
+  transition: transform 500ms;
+}
+
+iframe {
+  display: flex;
+  border-radius: 2rem;
+}
+
+
+footer {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  
+  width: 100%;
+  padding: 1.5rem;
+
+  background-color: rgb(113, 194, 117);
+}
+
+
+
+/* ----------Media Querry---------- */
+@media (min-width: 970px){
+  .hdr {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 32rem;
+      padding: 2.5rem;
+      padding-bottom: 1.5rem;    
+  }
+
+  header h1 {
+      font-size: 5em;
+  }
+
+  .img {
+      display:flex;
+      min-height: 15rem;
+      min-width: 15rem;
+      background-image: url(./img/logo1.jpg);
+      background-size: contain;
+      border-radius: 50%;       
+  }
+
+  a.link {
+      font-size: 2.5rem;
+      padding: 1rem;
+  }
+  
+  
+  footer {
+      font-size: 2rem;
+  }
+}
