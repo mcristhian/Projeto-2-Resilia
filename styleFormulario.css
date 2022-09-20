@@ -87,6 +87,9 @@ main {
   display: flex;
   flex-direction: row;
   gap: 4rem;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 10rem;
 }
 
 .local {
@@ -106,10 +109,9 @@ main {
 }
 
 form {
-  background-color: white;
+ 
   height: 40rem;
   width: 70rem;
-  border-radius: 8px;
   padding: 20px;
 
   display: flex;
