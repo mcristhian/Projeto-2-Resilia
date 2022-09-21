@@ -34,3 +34,8 @@ function lista_itens(item){
 
 console.log('Você comprou', lista_de_compras.length, 'itens:', lista_itens(lista_de_compras));
 console.log('Seu total ficou em: R$', calcula(lista_de_compras));
+
+function adiciona(item){
+    item.push(item)
+    alert('Adicionado com sucesso.');
+}
