@@ -88,32 +88,32 @@ main {
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+  padding-bottom: 3rem;
   width: 100%;
 }
 
 .local {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
+  padding: 2rem;
 }
 
 .local h2 {
     font-family: 'EB Garamond', serif;
-    font-size: 3.5rem;  
+    font-size: 2.5rem;  
 }
 
 .local p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align:center;
 }
 
 form {
- 
-  height: 40rem;
   width: 100%;
-  padding: 20px;
-
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -130,9 +130,11 @@ form legend {
 .input-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 
   font-family: 'Acme', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 4rem;
   color: black;
 }
@@ -160,22 +162,22 @@ form legend {
 }
 
 form .button {
+  display: flex;
+  justify-content: center;
   margin-top: 1rem;
   border-radius: 8px;
   padding: 0 100px;
   width: 50%;
-
   
   font-size: 16px;
   line-height: 26px;
   background-color:  rgb(113, 194, 117);
-
-  transition: transform 500ms;
 }
 
 iframe {
   display: flex;
   border-radius: 2rem;
+  width: 100%;
 }
 
 
@@ -194,7 +196,7 @@ footer {
 
 
 /* ----------Media Querry---------- */
-@media (min-width: 970px){
+@media (min-width: 1150px){
   .hdr {
       display: flex;
       justify-content: space-around;
@@ -222,10 +224,36 @@ footer {
       padding: 1rem;
   }
   
+  .contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 120rem;
+    max-height: 50rem;
+  }
+  
+  .local {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 15rem;
+  }
+  
+  .local h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 3.5rem;  
+  }
+  
+  .local p {
+    font-size: 2rem;
+  }
+  
   form {
- 
+    background-color: white;
     height: 40rem;
     width: 70rem;
+    border-radius: 8px;
     padding: 20px;
   
     display: flex;
@@ -236,7 +264,7 @@ footer {
   
   form legend {
     font-family: 'EB Garamond', serif;
-    font-size:2.5rem;
+    font-size:3rem;
     font-weight: bold;
     line-height: 4rem;
   }
@@ -244,6 +272,7 @@ footer {
   .input-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
   
     font-family: 'Acme', sans-serif;
     font-size: 2rem;
@@ -281,8 +310,10 @@ footer {
     font-size: 16px;
     line-height: 26px;
     background-color:  rgb(113, 194, 117);
+  }
   
-    transition: transform 500ms;
+  iframe {
+    max-width: 120rem;
   }
   
   footer {
