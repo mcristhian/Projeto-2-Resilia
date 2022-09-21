@@ -10,23 +10,25 @@
 
 body {
   display: block;
+  width: auto;
   min-height: 100vh;
+  background-image: url(./img/hd2.jpg);
+  background-size:cover;
+  background-position: center;
 }
 
 header {
-  background-color: rgb(83, 146, 76);
-  background-image: url(./img/bckg2.jpg);
-  background-size: cover;
-  height: 28rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hdr {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   gap: 6rem;
   padding: 2.5rem;
   padding-bottom: 1.5rem;
@@ -112,9 +114,14 @@ footer {
   bottom: 0;
   
   width: 100%;
-  padding: 1.5rem;
+  padding: 2.5rem;
+}
 
-  background-color: rgb(113, 194, 117);
+.txtf {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 /* Nossos produtos */
