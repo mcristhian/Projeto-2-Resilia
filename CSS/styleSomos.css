@@ -88,22 +88,27 @@ main {
 
 main h2 {
   font-size: 2.5rem;
+  animation: topdown 1s 200ms backwards;
 }
 
 main p {
   padding-top: 2rem;
-  padding-bottom: 4rem;
   font-size: 1.5rem;
   text-align: center;
+  animation: topdown 1s 400ms backwards;
 }
+
 
 main img {
+  margin-top: 2rem;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 10%;  
+  border-radius: 10%;
+  animation: topdown 1s 800ms backwards;
+  transition: transform 500ms;  
 }
-.equipimg {
-
+main img:hover {
+  transform: scale(1.05);
 }
 
 footer {
@@ -121,41 +126,6 @@ footer {
   background-color: antiquewhite;
   padding: 0.5rem;
   border-radius: 1rem;
-}
-
-/* Nossos produtos */
-.produtos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.categorias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 40%;
-  /*border: 0.1rem solid white;*/
-  margin: 0.1rem;
-  padding: 0.1rem;
-  gap: 0.75rem;
-  filter: contrast(10px);
-}
-
-.itens {
-  width: 20rem;
-  height: 20rem;
-}
-
-.itens:hover {
-  padding: 0.25rem 0.25rem;
-}
-
-.itens-texto {
-  padding-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 
 /* ----------Media Querry---------- */
@@ -200,14 +170,65 @@ footer {
       max-width: 80%;
   }
 
-  .equipimg {
-      max-width: 50%;
-      max-height: 50%;
-      border-radius: 10%;
-      margin-bottom: 5rem;  
+  .card img{
+    height: 60rem;
+    object-fit:cover;
   }
+
+  .equipimg {
+    display: grid;
+    justify-items: center;
+    max-width: 80%;
+    max-height: auto;
+    gap: 3.5rem;
+    margin-bottom: 6rem;
+
+    grid-template-areas: "A A B"
+    "C D D";
+  }
+
+    .equipimg div:nth-child(1) {
+      grid-area: A;
+
+    }
   
+    .equipimg div:nth-child(2) {
+      grid-area: B;
+    }
+  
+    .equipimg div:nth-child(3) {
+      grid-area: C;
+    }
+  
+    .equipimg div:nth-child(4) {
+      grid-area: D;
+    }
+
+      
   footer {
-      font-size: 2rem;
+      font-size: 2rem;}
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop{
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
