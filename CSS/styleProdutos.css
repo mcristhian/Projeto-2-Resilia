@@ -162,12 +162,12 @@ footer {
 /* ----------Media Querry---------- */
 @media (min-width: 970px){
   .hdr {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      gap: 32rem;
-      padding: 2.5rem;
-      padding-bottom: 1.5rem;    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+    padding: 2.5rem;
+    padding-bottom: 1.5rem;      
   }
 
   header h1 {
