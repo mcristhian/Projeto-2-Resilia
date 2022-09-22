@@ -32,32 +32,60 @@
     </header>    
 
     <main>
+        <div class="informacoes_carrinho">
+            <p>Total: R$ </p>
+            <p id="total_carrinho">0,00</p>
+        </div>
         <div class="produtos">
             <div class="categorias">
                 <!--<p>Frutas</p>--> 
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/kiwi.webp" alt="Kiwi" title="Kiwi">
-                    <p class="itens-texto">Kiwi <br> R$ 2,30/Kg</p>
+                    <p class="itens-texto">Kiwi <br> 2,30/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(0)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/pera.jpg" alt="Pera" title="Pera">
                     <p class="itens-texto">Pera <br> R$ 3,05/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(1)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/laranja-lima.jpg" alt="Laranja" title="Laranja">
                     <p class="itens-texto">Laranja <br> R$ 1,70/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(2)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button> 
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/caju.webp" alt="Caju" title="Caju">
                     <p class="itens-texto">Caju <br> R$ 2,10/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(3)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/banana.jpg" alt="Banana" title="Banana">
                     <p class="itens-texto">Banana <br> R$ 1,90/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(4)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/pessego.jpg" alt="Pêssego" title="Pêssego">
                     <p class="itens-texto">Pêssego <br> R$ 2,40/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(5)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
             </div>
 
@@ -66,26 +94,50 @@
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/alho.jpg" alt="Alho" title="Alho">
                     <p class="itens-texto">Alho <br> R$ 18,90/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(6)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/batata-inglesa.jpg" alt="Batata" title="Batata">
                     <p class="itens-texto">Batata <br> R$ 2,90/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(7)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/cebola.jpg" alt="Cebola" title="Cebola">
                     <p class="itens-texto">Cebola <br> R$ 3,10/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(8)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>        
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/cenoura.jpg" alt="Cenoura" title="Cenoura">
                     <p class="itens-texto">Cenoura <br> R$ 4,00/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(9)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>                      
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/cereja.webp" alt="Cereja" title="Cereja">
                     <p class="itens-texto">Cereja <br> R$ 25,30/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(10)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>                   
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/pepino.jpg" alt="Pepino" title="Pepino">
                     <p class="itens-texto">Pepino <br> R$ 6,10/Kg</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(11)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>                       
+                    </div>
                 </div>
             </div>
 
@@ -93,38 +145,60 @@
                 <!--<p>Verduras</p>-->
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/alface-americana.jpg" alt="Alface Americana" title="Alface Americana">
-                    <p class="itens-texto">Alface Americana <br> R$ 4,60/Un.</p>
+                    <p class="itens-texto">A. Americana <br> R$ 4,60/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(12)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>                       
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/manjericao.jpg" alt="Manjericão" title="Manjericão">
                     <p class="itens-texto">Manjericão <br> R$ 2,40/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(13)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/alface-romana-organica.jpg" alt="Alface Romana" title="Alface Romana">
-                    <p class="itens-texto">Alface Romana <br> R$ 5,30/Un.</p>
+                    <p class="itens-texto">A. Romana <br> R$ 5,30/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(14)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>    
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/Coentro.webp" alt="Coentro" title="Coentro">
                     <p class="itens-texto">Coentro <br> R$ 1,90/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(15)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>   
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/alho-poro.jpg" alt="Alho-Poró" title="Alho-Poró">
                     <p class="itens-texto">Alho-Poró <br> R$ 2,70/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(16)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>   
+                    </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/cheiro-verde.jpg" alt="Cheiro Verde" title="Cheiro Verde">
                     <p class="itens-texto">Cheiro Verde <br> R$ 2,10/Un.</p>
+                    <div class="botoes_carrinho">
+                        <button onclick="adicionar(17)">ADICIONAR</button>
+                        <button onclick="">REMOVER</button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <button onclick="adiciona()">Adicionar item</button>
     </main>
 
     <footer>
-            <div class="txtf">
-                    <p>Fale conosco no Instagram:</p><a target="_blank" href="#">@silvas_hortifruti</a>
-                </div>
+        <div class="txtf">
+            <p>Fale conosco no Instagram:</p><a target="_blank" href="#">@silvas_hortifruti</a>
+        </div>
     </footer>
 </body>
 </html>

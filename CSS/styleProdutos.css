@@ -159,6 +159,11 @@ footer {
   margin: auto;
 }
 
+.botoes_carrinho, .informacoes_carrinho {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ----------Media Querry---------- */
 @media (min-width: 970px){
   .hdr {
