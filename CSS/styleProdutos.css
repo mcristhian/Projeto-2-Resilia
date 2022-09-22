@@ -159,7 +159,13 @@ footer {
   margin: auto;
 }
 
-.botoes_carrinho, .informacoes_carrinho {
+.botoes_carrinho {
+  display: flex;
+  justify-content: space-between;
+  /*height: 5rem;*/
+}
+
+.informacoes_carrinho {
   display: flex;
   justify-content: space-between;
 }

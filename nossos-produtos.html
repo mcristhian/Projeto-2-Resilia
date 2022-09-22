@@ -44,7 +44,8 @@
                     <p class="itens-texto">Kiwi <br> 2,30/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(0)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_0">0</p>
+                        <button onclick="remover(0)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -52,7 +53,8 @@
                     <p class="itens-texto">Pera <br> R$ 3,05/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(1)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_1">0</p>
+                        <button onclick="remover(1)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -60,15 +62,17 @@
                     <p class="itens-texto">Laranja <br> R$ 1,70/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(2)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button> 
+                        <p id="quantidade_2">0</p>
+                        <button onclick="remover(2)">REMOVER</button> 
                     </div>
                 </div>
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/caju.webp" alt="Caju" title="Caju">
-                    <p class="itens-texto">Caju <br> R$ 2,10/Kg</p>
+                    <p class="itens-texto">Caju <br> R$ 2,20/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(3)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_3">0</p>
+                        <button onclick="remover(3)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -76,7 +80,8 @@
                     <p class="itens-texto">Banana <br> R$ 1,90/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(4)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_4">0</p>
+                        <button onclick="remover(4)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -84,7 +89,8 @@
                     <p class="itens-texto">Pêssego <br> R$ 2,40/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(5)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_5">0</p>
+                        <button onclick="remover(5)">REMOVER</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +102,8 @@
                     <p class="itens-texto">Alho <br> R$ 18,90/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(6)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_6">0</p>
+                        <button onclick="remover(6)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -104,7 +111,8 @@
                     <p class="itens-texto">Batata <br> R$ 2,90/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(7)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_7">0</p>
+                        <button onclick="remover()">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -112,7 +120,8 @@
                     <p class="itens-texto">Cebola <br> R$ 3,10/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(8)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>        
+                        <p id="quantidade_8">0</p>
+                        <button onclick="remover(8)">REMOVER</button>        
                     </div>
                 </div>
                 <div>
@@ -120,7 +129,8 @@
                     <p class="itens-texto">Cenoura <br> R$ 4,00/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(9)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>                      
+                        <p id="quantidade_9">0</p>
+                        <button onclick="remover(9)">REMOVER</button>                      
                     </div>
                 </div>
                 <div>
@@ -128,7 +138,8 @@
                     <p class="itens-texto">Cereja <br> R$ 25,30/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(10)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>                   
+                        <p id="quantidade_10">0</p>
+                        <button onclick="remover(10)">REMOVER</button>                   
                     </div>
                 </div>
                 <div>
@@ -136,7 +147,8 @@
                     <p class="itens-texto">Pepino <br> R$ 6,10/Kg</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(11)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>                       
+                        <p id="quantidade_11">0</p>
+                        <button onclick="remover(11)">REMOVER</button>                       
                     </div>
                 </div>
             </div>
@@ -148,7 +160,8 @@
                     <p class="itens-texto">A. Americana <br> R$ 4,60/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(12)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>                       
+                        <p id="quantidade_12">0</p>
+                        <button onclick="remover(12)">REMOVER</button>                       
                     </div>
                 </div>
                 <div>
@@ -156,7 +169,8 @@
                     <p class="itens-texto">Manjericão <br> R$ 2,40/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(13)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_13">0</p>
+                        <button onclick="remover(13)">REMOVER</button>
                     </div>
                 </div>
                 <div>
@@ -164,7 +178,8 @@
                     <p class="itens-texto">A. Romana <br> R$ 5,30/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(14)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>    
+                        <p id="quantidade_14">0</p>
+                        <button onclick="remover(14)">REMOVER</button>    
                     </div>
                 </div>
                 <div>
@@ -172,7 +187,8 @@
                     <p class="itens-texto">Coentro <br> R$ 1,90/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(15)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>   
+                        <p id="quantidade_15">0</p>
+                        <button onclick="remover(15)">REMOVER</button>   
                     </div>
                 </div>
                 <div>
@@ -180,7 +196,8 @@
                     <p class="itens-texto">Alho-Poró <br> R$ 2,70/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(16)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>   
+                        <p id="quantidade_16">0</p>
+                        <button onclick="remover(16)">REMOVER</button>   
                     </div>
                 </div>
                 <div>
@@ -188,7 +205,8 @@
                     <p class="itens-texto">Cheiro Verde <br> R$ 2,10/Un.</p>
                     <div class="botoes_carrinho">
                         <button onclick="adicionar(17)">ADICIONAR</button>
-                        <button onclick="">REMOVER</button>
+                        <p id="quantidade_17">0</p>
+                        <button onclick="remover(17)">REMOVER</button>
                     </div>
                 </div>
             </div>
