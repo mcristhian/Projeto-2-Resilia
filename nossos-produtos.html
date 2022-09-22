@@ -8,20 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Referências para fonte, arquivo CSS e JS -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styleProdutos.css">
     <script src="./JS/nossos-produtos.js" defer></script>
+
     <title>Nossos produtos - Silvas Hortifruti</title>
 </head>
 
 <body>
-    <header>        
+    <header>
+        <!-- Div abrigando o título e a logo -->        
         <div class="hdr">
             <h1 id="titulo">SILVAS HORTIFRUTI</h1>
             <div class="img">          
             </div>
         </div>
         
+        <!-- Nav responsável pela navegação entre as páginas -->
         <nav>
             <a class="link" href="./index.html">Página inicial</a>
             <a class="link" href="./nossos-produtos.html">Nossos produtos</a>
@@ -32,17 +36,21 @@
     </header>    
 
     <main>
+        <!-- Div para exibir o total dos itens no carrinho -->
         <div class="informacoes_carrinho">
             <p>Total: R$ </p>
             <p id="total_carrinho">0,00</p>
         </div>
+
+        <!-- Div para abrigar outras divs contendo seus respectivos produtos -->
         <div class="produtos">
+            <!-- Divisão de categoria -->
             <div class="categorias">
-                <!--<p>Frutas</p>--> 
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Frutas/kiwi.webp" alt="Kiwi" title="Kiwi">
                     <p class="itens-texto">Kiwi <br> 2,30/Kg</p>
                     <div class="botoes_carrinho">
+                        <!-- Chamada de função, com posição na lista como argumento, para adicionar ou remover o item na lista quantidade_itens -->
                         <button onclick="adicionar(0)">ADICIONAR</button>
                         <p id="quantidade_0">0</p>
                         <button onclick="remover(0)">REMOVER</button>
@@ -95,8 +103,8 @@
                 </div>
             </div>
 
+            <!-- Divisão de categoria -->
             <div class="categorias">
-                <!--<p>Legumes</p>-->
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Legumes/alho.jpg" alt="Alho" title="Alho">
                     <p class="itens-texto">Alho <br> R$ 18,90/Kg</p>
@@ -153,8 +161,8 @@
                 </div>
             </div>
 
+            <!-- Divisão de categoria -->
             <div class="categorias">
-                <!--<p>Verduras</p>-->
                 <div>
                     <img class="itens" src="./CSS/img/Produtos/Verduras/alface-americana.jpg" alt="Alface Americana" title="Alface Americana">
                     <p class="itens-texto">A. Americana <br> R$ 4,60/Un.</p>
@@ -213,6 +221,7 @@
         </div>
     </main>
 
+    <!-- Footer para as redes sociais do site -->
     <footer>
         <div class="txtf">
             <p>Fale conosco no Instagram:</p><a target="_blank" href="#">@silvas_hortifruti</a>
