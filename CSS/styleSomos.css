@@ -39,6 +39,8 @@ header h1 {
   font-family: 'EB Garamond', serif;
   font-size: 3rem;
   color: rgb(133, 23, 23);
+
+  animation: downtop  500ms;
 }
 
 .img {
