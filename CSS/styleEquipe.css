@@ -39,6 +39,8 @@ header h1 {
   font-family: 'EB Garamond', serif;
   font-size: 3rem;
   color: rgb(133, 23, 23);
+
+  animation: downtop  500ms;
 }
 
 .img {
@@ -48,6 +50,8 @@ header h1 {
   background-image: url(./img/logo1.jpg);
   background-size: contain;
   border-radius: 50%;
+
+  animation: rotate 1s;
 }
 
 #logo {
@@ -63,7 +67,13 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin: auto auto 2rem;  
+  margin: auto auto 2rem; 
+  
+  transition: transform 500ms;  
+}
+
+nav a:nth-child(4) {
+  background-color:rgb(104, 207, 83);
 }
 
 a.link {
@@ -74,6 +84,13 @@ a.link {
   margin-top: 0.6rem;
   background-color: white;
   border-radius: 1rem;
+
+  transition: transform 500ms; 
+}
+
+a.link:hover {
+  background-color:rgb(104, 207, 83);
+  transform: scale(1.1);
 }
 
 main {
@@ -88,6 +105,8 @@ main {
 
 main h2 {
   font-size: 2.5rem;
+
+  animation: topdown 1s 200ms backwards;
 }
 
 main p {
@@ -95,13 +114,22 @@ main p {
   padding-bottom: 4rem;
   font-size: 1.5rem;
   text-align: center;
+
+  animation: topdown 1s 400ms backwards;
 }
 
 main img {
   margin-top: 4rem;
   max-width: 100%;
   max-height: 100%;
-  border-radius: 10%;  
+  border-radius: 10%; 
+  
+  animation: topdown 1s 800ms backwards;
+  transition: transform 500ms;  
+}
+
+main img:hover {
+  transform: scale(1.1);
 }
 
 ul {
@@ -113,6 +141,8 @@ ul {
 li {
     vertical-align:middle;
     margin-top: 1rem;
+
+    animation: topdown 1s 400ms backwards;
 }
 
 footer {
@@ -229,5 +259,39 @@ footer {
   
   footer {
       font-size: 2rem;
+  }
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateY(360deg);
+  }
+
+  100%{
+    transform: rotate(0);
   }
 }

@@ -48,6 +48,7 @@ header h1 {
   background-image: url(./img/logo1.jpg);
   background-size: contain;
   border-radius: 50%;
+  animation: rotate 1s;
 }
 
 #logo {
@@ -66,6 +67,10 @@ nav {
   margin: auto auto 2rem;  
 }
 
+nav a:nth-child(5) {
+  background-color:rgb(104, 207, 83);
+}
+
 a.link {
   text-decoration: none;
   font-size: 1.8rem;
@@ -74,7 +79,15 @@ a.link {
   margin-top: 0.6rem;
   background-color: white;
   border-radius: 1rem;
+
+  transition: transform 500ms; 
 }
+
+a.link:hover {
+  background-color:rgb(104, 207, 83);
+  transform: scale(1.1);
+}
+
 
 main {
   display: flex;
@@ -128,7 +141,7 @@ footer {
   border-radius: 1rem;
 }
 
-/* ----------Media Querry---------- */
+/* ----------Media Query---------- */
 @media (min-width: 970px){
   .hdr {
       display: flex;
@@ -230,5 +243,15 @@ footer {
   100%{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotateY(360deg);
+  }
+
+  100%{
+    transform: rotate(0);
   }
 }
