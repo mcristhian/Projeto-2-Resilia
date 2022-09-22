@@ -13,15 +13,16 @@ body {
   width: auto;
   min-height: 100vh;
   background-image: url(./img/hd2.jpg);
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 }
 
 header {
-    height: 28rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hdr {
@@ -38,6 +39,8 @@ header h1 {
   font-family: 'EB Garamond', serif;
   font-size: 3rem;
   color: rgb(133, 23, 23);
+
+  animation: downtop 500ms;
 }
 
 .img {
@@ -47,6 +50,8 @@ header h1 {
   background-image: url(./img/logo1.jpg);
   background-size: contain;
   border-radius: 50%;
+
+  animation: rotate 1s;
 }
 
 #logo {
@@ -62,7 +67,13 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin: auto auto 2rem;  
+  margin: auto auto 2rem; 
+  
+  transition: transform 500ms;  
+}
+
+nav a:nth-child(2) {
+  background-color:rgb(104, 207, 83);
 }
 
 a.link {
@@ -73,6 +84,13 @@ a.link {
   margin-top: 0.6rem;
   background-color: white;
   border-radius: 1rem;
+
+  transition: transform 500ms; 
+}
+
+a.link:hover {
+  background-color:rgb(104, 207, 83);
+  transform: scale(1.1);
 }
 
 main {
@@ -80,35 +98,55 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 2rem;
   background-color: antiquewhite;
 }
 
 main h2 {
   font-size: 2.5rem;
+
+  animation: topdown 1s 200ms backwards;
 }
 
 main p {
   padding-top: 2rem;
   padding-bottom: 4rem;
   font-size: 1.5rem;
-}
+  text-align: center;
 
-.feira {
-  display:contents;
-  width: 100%;
-  height: 70vmin;
-  align-content: center;
+  animation: topdown 1s 400ms backwards;
 }
 
 main img {
+  /*margin-top: 4rem;*/
   max-width: 100%;
   max-height: 100%;
-  border-radius: 10%;  
+  border-radius: 10%; 
+  
+  animation: topdown 1s 800ms backwards;
+  transition: transform 500ms;  
+}
+
+main img:hover {
+  transform: scale(1.1);
+}
+
+ul {
+    list-style-image: url(./img/maca2.png);
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+li {
+    vertical-align:middle;
+    margin-top: 1rem;
+
+    animation: topdown 1s 400ms backwards;
 }
 
 footer {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   bottom: 0;
@@ -129,6 +167,9 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .categorias {
@@ -146,14 +187,17 @@ footer {
 .itens {
   width: 20rem;
   height: 20rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
 }
 
-.itens:hover {
+/*.itens:hover {
   padding: 0.25rem 0.25rem;
-}
+}*/
 
 .itens-texto {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -162,23 +206,34 @@ footer {
 .botoes_carrinho {
   display: flex;
   justify-content: space-between;
-  /*height: 5rem;*/
 }
 
 .informacoes_carrinho {
   display: flex;
   justify-content: space-between;
+  background-color: rgb(104, 207, 83);
+  position: fixed;
+  overflow-y: scroll;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.botoes_carrinho p {
+  padding-top: 0rem;
+  padding-bottom: initial;
 }
 
 /* ----------Media Querry---------- */
 @media (min-width: 970px){
   .hdr {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10rem;
-    padding: 2.5rem;
-    padding-bottom: 1.5rem;      
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 10rem;
+      padding: 2.5rem;
+      padding-bottom: 1.5rem;    
   }
 
   header h1 {
@@ -186,7 +241,7 @@ footer {
   }
 
   .img {
-      display:flex;
+      display: flex;
       min-height: 15rem;
       min-width: 15rem;
       background-image: url(./img/logo1.jpg);
@@ -199,13 +254,7 @@ footer {
       padding: 1rem;
   }
 
-  .feira {
-      display:contents;
-      width: 100%;
-      height: 70vmin;
-      align-content: center;
-  }
-
+ 
   main h2 {
       font-size: 5.5rem;
   }
@@ -217,9 +266,19 @@ footer {
       text-align:justify;
       max-width: 80%;
   }
-  
-  /* Defini uma classe para não afetar todas as imagens (retire esse comentário antes de commitar) */
-  .index-img {
+
+  ul {
+    font-size: 2.7rem;
+    margin-top: 2rem;
+  }
+
+  li {
+    vertical-align: baseline;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+
+  .equipimg {
       max-width: 50%;
       max-height: 50%;
       border-radius: 10%;
@@ -228,5 +287,39 @@ footer {
   
   footer {
       font-size: 2rem;
+  }
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate{
+  0% {
+    transform: rotateY(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
   }
 }

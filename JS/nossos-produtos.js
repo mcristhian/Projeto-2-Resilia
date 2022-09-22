@@ -71,5 +71,5 @@ function valor_total(item) {
     }
 
     //Atualização do valor total do carrinho na página
-    total_carrinho.innerHTML = total;
+    total_carrinho.innerHTML = Math.round(total * 100) / 100;
 }
