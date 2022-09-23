@@ -17,7 +17,11 @@ Esse projeto teve como finalidade a aplicação das ferramentas aprendidas no pr
 
 ## :mailbox: Contato
 thematheuscris@gmail.com
+
 davidgeosantos@gmail.com
+
 thamaraevelyn2012@gmail.com
+
 pireslima004@gmail.com
+
 lucascardoso1302@gmail.com
