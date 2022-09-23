@@ -240,7 +240,16 @@ footer {
   border-radius: 1rem;
 }
 
+.redes_sociais {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+}
 
+.texto_redes_sociais {
+  display: flex;
+  align-items: center;
+}
 
 /* Media Query (adaptação do layout de acordo com o tamanho limitado) */
 @media (min-width: 1150px){

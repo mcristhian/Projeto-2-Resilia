@@ -225,6 +225,17 @@ footer {
   padding-bottom: initial;
 }
 
+.redes_sociais {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+}
+
+.texto_redes_sociais {
+  display: flex;
+  align-items: center;
+}
+
 /* ----------Media Querry---------- */
 @media (min-width: 970px){
   .hdr {
