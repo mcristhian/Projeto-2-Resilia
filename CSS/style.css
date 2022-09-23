@@ -1,13 +1,16 @@
+/* Tirar as configurações que vem por padrão no navegador */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* configuração inserida para toda a pagina html para melhor conversão da unidade pixel em "em" */
 :root {
     font-size: 62.5%;
 }
 
+/* ajuste no layout da pagina */
 body {
     display: block;
     width: auto;
@@ -17,6 +20,7 @@ body {
     background-position: center;
 }
 
+/* organização das divs presentes no header */
 header {
     height: 28rem;
     display: flex;
@@ -24,6 +28,7 @@ header {
     align-items: center;
 }
 
+/* posicionamento da caixa que contem o titulo e a logo */
 .hdr {
     display: flex;
     justify-content: space-around;
@@ -34,6 +39,7 @@ header {
     padding-bottom: 1.5rem;
 }
 
+/* estilização do titulo */
 header h1 {
     font-family: 'EB Garamond', serif;
     font-size: 3rem;
@@ -42,6 +48,7 @@ header h1 {
     animation: downtop  500ms;
 }
 
+/* estilização da logo */
 .img {
     display:flex;
     min-height: 9rem;
@@ -53,12 +60,7 @@ header h1 {
     animation: rotate 1s;
 }
 
-#logo {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 0.5rem;
-}
-
+/* estilização do menu*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -69,10 +71,12 @@ nav {
     margin: auto auto 2rem;  
 }
 
+/* estilização diferenciada da parte do menu em qual a pagina se encontra*/
 nav a:nth-child(1) {
     background-color:rgb(104, 207, 83);
 }
 
+/* estilização do texto do menu*/
 a.link {
     text-decoration: none;
     font-size: 1.8rem;
@@ -85,11 +89,13 @@ a.link {
     transition: transform 500ms;  
 }
 
+/* efeito para o menu ao passar o mouse*/
 a.link:hover {
     background-color:rgb(104, 207, 83);
     transform: scale(1.1);
 }
 
+/* organização dos elementos presentes no main*/
 main {
     display: flex;
     flex-direction: column;
@@ -99,11 +105,13 @@ main {
     background-color: antiquewhite;
 }
 
+/* estilização do titulo */
 main h2 {
     font-size: 2.5rem;
     animation: topdown 1s 200ms backwards;
 }
 
+/* estilização do texto */
 main p {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -111,6 +119,7 @@ main p {
     animation: topdown 1s 400ms backwards;
 }
 
+/* div para conter a imagem*/
 .feira {
     display:contents;
     width: 100%;
@@ -118,6 +127,7 @@ main p {
     align-content: center;
 }
 
+/* estilização da imagem */
 main img {
     max-width: 100%;
     max-height: 100%;
@@ -126,10 +136,12 @@ main img {
     transition: transform 500ms;   
 }
 
+/* efeito para a imagem ao passar o mouse*/
 main img:hover {
     transform: scale(1.1);
 }
 
+/* organização dos elementos presentes no footer*/
 footer {
     display:flex;
     align-items: center;
@@ -140,6 +152,7 @@ footer {
     padding: 2.5rem;
   }
   
+  /* estilização para o texto do footer*/
   .txtf {
     display: flex;
     background-color: antiquewhite;
@@ -147,42 +160,7 @@ footer {
     border-radius: 1rem;
   }
 
-/* Nossos produtos */
-.produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.categorias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 40%;
-    /*border: 0.1rem solid white;*/
-    margin: 0.1rem;
-    padding: 0.1rem;
-    gap: 0.75rem;
-    filter: contrast(10px);
-}
-
-.itens {
-    width: 20rem;
-    height: 20rem;
-}
-
-.itens:hover {
-    padding: 0.25rem 0.25rem;
-}
-
-.itens-texto {
-    padding-top: 0.5rem;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-/* ----------Media Querry---------- */
+/* Media Query (adaptação do layout de acordo com o tamanho limitado) */
 @media (min-width: 970px){
     .hdr {
         display: flex;
@@ -230,7 +208,6 @@ footer {
         max-width: 80%;
     }
     
-    /* Defini uma classe para não afetar todas as imagens (retire esse comentário antes de commitar) */
     .index-img {
         max-width: 50%;
         max-height: 50%;
@@ -243,6 +220,7 @@ footer {
     }
 }
 
+/* KeyFrames (configuração das animações utilizadas na página) */
 @keyframes topdown {
     0% {
       opacity: 0;

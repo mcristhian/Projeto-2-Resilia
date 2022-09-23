@@ -8,20 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+    <!-- Referências para fonte e arquivo CSS -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styleFormulario.css">
+
     <title>Formulário de contato - Silvas Hortifruti</title>
     <script src="./JS/formulario-de-contato.js" defer></script>
 </head>
 
 <body>
-    <header>        
+    <header>     
+        <!-- Div abrigando o título e a logo -->        
         <div class="hdr">
             <h1 id="titulo">SILVAS HORTIFRUTI</h1>
             <div class="img">          
             </div>
         </div>
         
+        <!-- Nav responsável pela navegação entre as páginas -->
         <nav>
             <a class="link" href="./index.html">Página inicial</a>
             <a class="link" href="./nossos-produtos.html">Nossos produtos</a>
@@ -32,12 +36,13 @@
     </header>    
 
     <main>
+        <!-- Div de class "contatos" para organizar parte com texto e outra com formulario introduzida pela tag <form> -->
         <div class="contatos">
             <div class="local">
                 <h2>Onde ficamos?</h2>
                 <p>Estamos localizados na <span>Rua Barcelos Domingos, 58 – Campo Grande , Rio de Janeiro.</span></p>
                 <h2>Horário de Funcionamento</h2>
-                <p>De terça-Feira à sábado das 06:00 às 18:00.</p>
+                <p>De terça-feira à sábado das 06:00 às 18:00.</p>
                 <h2>Entrega a Domicílio</h2>
                 <p>Temos essa praticidade de entregas feitas nas compras do nosso site.</p>
             </div>
@@ -61,16 +66,19 @@
                     <label for="message">Mensagem:</label>
                     <textarea id="message" ></textarea>
                 </div>
-    
+                
+                <!-- tag usada para colocar o botão na página -->
                 <input class="button" type="submit" form="form-contact" value="Enviar">
         </div>
 
         </form>
 
+        <!-- código de incorporação do Google retirada do google maps -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3602754410817!2d-43.56089328462518!3d-22.90007868501526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be1583657b145%3A0xf628e70e369d933e!2sR.%20Barcelos%20Domingos%2C%2058%20-%20Campo%20Grande%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2023080-020!5e0!3m2!1spt-BR!2sbr!4v1663636088652!5m2!1spt-BR!2sbr" width="900" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </main>
 
+    <!-- Footer para as redes sociais do site -->
     <footer>
             <div class="txtf">
                     <p>Fale conosco no Instagram:</p><a target="_blank" href="#">@silvas_hortifruti</a>

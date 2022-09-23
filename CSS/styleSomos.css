@@ -1,13 +1,16 @@
+/* Tirar as configurações que vem por padrão no navegador */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* configuração inserida para toda a pagina html para melhor conversão da unidade pixel em "em" */
 :root {
   font-size: 62.5%;
 }
 
+/* ajuste no layout da pagina */
 body {
   display: block;
   width: auto;
@@ -17,6 +20,7 @@ body {
   background-position: center;
 }
 
+/* organização das divs presentes no header */
 header {
   
   height: 28rem;
@@ -25,6 +29,7 @@ header {
   align-items: center;
 }
 
+/* posicionamento da caixa que contem o titulo e a logo */
 .hdr {
   display: flex;
   justify-content: space-around;
@@ -35,6 +40,7 @@ header {
   padding-bottom: 1.5rem;
 }
 
+/* estilização do titulo */
 header h1 {
   font-family: 'EB Garamond', serif;
   font-size: 3rem;
@@ -43,6 +49,7 @@ header h1 {
   animation: downtop  500ms;
 }
 
+/* estilização da logo */
 .img {
   display:flex;
   min-height: 9rem;
@@ -53,12 +60,7 @@ header h1 {
   animation: rotate 1s;
 }
 
-#logo {
-  width: 5rem;
-  height: 5rem;
-  margin-bottom: 0.5rem;
-}
-
+/* estilização do menu*/
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -69,10 +71,12 @@ nav {
   margin: auto auto 2rem;  
 }
 
+/* estilização diferenciada da parte do menu em qual a pagina se encontra*/
 nav a:nth-child(5) {
   background-color:rgb(104, 207, 83);
 }
 
+/* estilização do texto do menu*/
 a.link {
   text-decoration: none;
   font-size: 1.8rem;
@@ -85,12 +89,13 @@ a.link {
   transition: transform 500ms; 
 }
 
+/* efeito para o menu ao passar o mouse*/
 a.link:hover {
   background-color:rgb(104, 207, 83);
   transform: scale(1.1);
 }
 
-
+/* organização dos elementos presentes no main*/
 main {
   display: flex;
   flex-direction: column;
@@ -101,11 +106,13 @@ main {
   background-color: antiquewhite;
 }
 
+/* estilização do titulo */
 main h2 {
   font-size: 2.5rem;
   animation: topdown 1s 200ms backwards;
 }
 
+/* estilização do texto */
 main p {
   padding-top: 2rem;
   font-size: 1.5rem;
@@ -113,7 +120,7 @@ main p {
   animation: topdown 1s 400ms backwards;
 }
 
-
+/* estilização da imagem */
 main img {
   margin-top: 2rem;
   max-width: 100%;
@@ -122,10 +129,13 @@ main img {
   animation: topdown 1s 800ms backwards;
   transition: transform 500ms;  
 }
+
+/* efeito para a imagem ao passar o mouse*/
 main img:hover {
   transform: scale(1.05);
 }
 
+/* organização dos elementos presentes no footer*/
 footer {
   display:flex;
   align-items: center;
@@ -136,6 +146,7 @@ footer {
   padding: 2.5rem;
 }
 
+/* estilização para o texto do footer*/
 .txtf {
   display: flex;
   background-color: antiquewhite;
@@ -143,7 +154,7 @@ footer {
   border-radius: 1rem;
 }
 
-/* ----------Media Query---------- */
+/* Media Query (adaptação do layout de acordo com o tamanho limitado) */
 @media (min-width: 970px){
   .hdr {
       display: flex;
@@ -190,6 +201,7 @@ footer {
     object-fit:cover;
   }
 
+  /* estilização para a imagem em forma de mosaico*/
   .equipimg {
     display: grid;
     justify-items: center;
@@ -224,6 +236,7 @@ footer {
       font-size: 2rem;}
 }
 
+/* KeyFrames (configuração das animações utilizadas na página) */
 @keyframes topdown {
   0% {
     opacity: 0;
